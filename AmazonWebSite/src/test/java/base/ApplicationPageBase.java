@@ -60,6 +60,10 @@ public class ApplicationPageBase{
         String actualText =  webElement.getText();
 
         return actualText;
+        /**
+         * Added comment
+         * This is from afnan
+         * */
 
     }
 

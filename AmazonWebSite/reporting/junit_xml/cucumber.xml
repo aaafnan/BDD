@@ -1,8 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="15.72022">
-<testcase classname="LogIn Feature" name="Login with Invalid credential and warning alert appear" time="15.72022">
-<system-out><![CDATA[Given User enter from home page.............................................passed
-When user eneter username and password and then sign in button..............passed
-Then Wrong password alert display...........................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="83.438549">
+<testcase classname="Multiple creditial check" name="Check a list of creditials using username and password" time="27.582791">
+<system-out><![CDATA[Given Land on Login Page From home Page.....................................passed
+When Try multiple "dassa@hotmail.com" and "45678fgh"........................passed
+Then Invalid message appear.................................................passed
 ]]></system-out>
+</testcase>
+<testcase classname="Multiple creditial check" name="Check a list of creditials using username and password 2" time="19.119313">
+<system-out><![CDATA[Given Land on Login Page From home Page.....................................passed
+When Try multiple "adsafa@yahoo.com" and "456780"...........................passed
+Then Invalid message appear.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Multiple creditial check" name="Check a list of creditials using username and password 3" time="19.546177">
+<system-out><![CDATA[Given Land on Login Page From home Page.....................................passed
+When Try multiple "ghjkl@gmail.com" and "45678".............................passed
+Then Invalid message appear.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Multiple creditial check" name="reading data from data table" time="17.190268">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinitions.LogInPageSteps.invalid_alert_box_should_appear(LogInPageSteps.java:64)&#13;&#10;&#9;at ✽.Then Invalid alert box should appear(loginpage.feature:27)&#13;&#10;"><![CDATA[Given Land on lOginPage from HomePage.......................................passed
+When read data from data table..............................................passed
+Then Invalid alert box should appear........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinitions.LogInPageSteps.invalid_alert_box_should_appear(LogInPageSteps.java:64)
+	at ✽.Then Invalid alert box should appear(loginpage.feature:27)
+]]></failure>
 </testcase>
 </testsuite>
